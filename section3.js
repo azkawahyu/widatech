@@ -5,8 +5,7 @@
 // the numbers can only be used once
 // l is the length of the array
 // t is the total sum of the combination
-
-function section3(l, start, end, t, result) {
+section3 = (l, start, end, t, result) => {
   var output = [];
   result = result || [];
   if (l === 1) {
@@ -30,6 +29,5 @@ function section3(l, start, end, t, result) {
     }
     return output;
   }
-}
-console.log(section3(6, 1, 3, 3));
-console.log(section3(8, 1, 3, 3));
+};
+console.log(section3(3, 1, 3, 6));
